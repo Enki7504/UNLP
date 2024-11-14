@@ -1,0 +1,5 @@
+1718030348272	Rename type 'mapa'
+1718117752052	Encapsulate field 'estado'
+1718117761804	Encapsulate field 'pagado'
+1718117764317	Encapsulate field 'domicilio'
+1718117767677	Encapsulate field 'nombre'

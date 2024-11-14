@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="practica1.Estudiante"/>
+    <fullyQualifiedTypeName name="prac2.ContadorArbol"/>
+    <fullyQualifiedTypeName name="prac2.RedBinariaLlena"/>
+    <fullyQualifiedTypeName name="prac2.ProfundidadDeArbolBinario"/>
+    <fullyQualifiedTypeName name="prac2.BinaryTree"/>
+    <fullyQualifiedTypeName name="prac2.Transformacion"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="tp1.ejercicio8.Queue"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="ar.edu.unlp.info.oo1.ej10_jobScheduler.JobScheduler"/>
+    <fullyQualifiedTypeName name="ar.edu.unlp.info.oo1.ej10_jobScheduler.JobDescription"/>
+</qualifiedTypeNameHistroy>

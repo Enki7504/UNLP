@@ -1,0 +1,24 @@
+package prac3;
+
+import java.util.List;
+
+public class RecorridosAG {
+	public List<Integer> numerosImparesMayoresQuePreOrden (GeneralTree <Integer> a,Integer n){
+		List<Integer> lista = null;
+		return numerosImparesMayoresQuePreOrdenPrivate(a,n,lista);;
+	}
+	
+	private List<Integer> numerosImparesMayoresQuePreOrdenPrivate (GeneralTree <Integer> a,Integer n,List<Integer> l){
+		if ((a.getData()%2 != 0) && (a.getData() > n)){
+			l.add(a.getData());
+		}
+		if (a.hasChildren()) {
+			List<GeneralTree<Integer>> hijos = a.getChildren();
+			for (int i = hijos.size(); i<hijos.size();i++) {
+				numerosImparesMayoresQuePreOrdenPrivate(hijos.get(i),n,l);
+			}
+		}
+		return l;
+	}
+	
+}

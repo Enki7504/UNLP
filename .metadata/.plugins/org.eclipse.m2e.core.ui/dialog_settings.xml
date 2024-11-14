@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\emilo\Downloads\ejercicio2"/>
+			<item value="C:\Users\emilo\Downloads\ejercicio1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\emilo\eclipse-workspace\ej3_presupuestos"/>
+			<item value="C:\Users\emilo\eclipse-workspace\ejercicio3"/>
+			<item value="C:\Users\emilo\eclipse-workspace\ISO2024"/>
+			<item value="C:\Users\emilo\eclipse-workspace\ejercicio2"/>
+			<item value="C:\Users\emilo\eclipse-workspace\ISO2024\src\BalanzaTest.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="defaultLocal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="ar.edu.unlp.info.oo1.ej11_inversor"/>
+			<item value="ar.edu.unlp.info.oo1.ej11_"/>
+			<item value="ar.edu.unlp.info.oo1.ej10_job"/>
+			<item value="ar.edu.unlp.info.oo1.ej9_cuenta"/>
+			<item value="ar.edu.unlp.info.oo1.ej8_empleados"/>
+			<item value="ar.edu.unlp.info.oo1.ej7_alumbrado"/>
+			<item value="ar.edu.unlp.info.oo1.ej6_genealogia"/>
+			<item value="ar.edu.unlp.info.oo1.ej4_figuras"/>
+			<item value="ar.edu.unlp.info.oo1.ej3_presupuestos"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio3"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio2"/>
+		</list>
+		<list key="groupId">
+			<item value="ar.edu.unlp.info.oo1"/>
+		</list>
+		<list key="artifactId">
+			<item value="ej11_inversor"/>
+			<item value="ej11_"/>
+			<item value="ej10_job"/>
+			<item value="ej9_cuenta"/>
+			<item value="ej8_empleados"/>
+			<item value="ej7_alumbrado"/>
+			<item value="ej6_genealogia"/>
+			<item value="ej4_figuras"/>
+			<item value="ej3_presupuestos"/>
+			<item value="ejercicio3"/>
+			<item value="ejercicio2"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+		<list key="archetypeGroupId">
+			<item value="io.github.unlp-oo"/>
+		</list>
+		<list key="archetypeArtifactId">
+			<item value="archetype"/>
+		</list>
+		<list key="archetypeVersion">
+			<item value="1.0.0"/>
+		</list>
+		<list key="repositoryUrl">
+			<item value=""/>
+		</list>
+	</section>
+</section>

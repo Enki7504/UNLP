@@ -1,0 +1,42 @@
+package ar.edu.unlp.info.oo1.balanzaElectronica;
+
+public class Producto {
+	private Double peso;
+	private Double precioPorKilo;
+	private String descripcion;
+	
+	public Producto() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Double getPrecio() {
+		return precioPorKilo;
+	}
+	
+	public void setPrecioPorKilo(Double precio) {
+		this.precioPorKilo = precio;
+	}
+
+	public Double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(Double peso) {
+		this.peso = peso;
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	public Double getPrecioPorKilo() {
+		// TODO Auto-generated method stub
+		return this.precioPorKilo;
+	}
+	
+	
+}

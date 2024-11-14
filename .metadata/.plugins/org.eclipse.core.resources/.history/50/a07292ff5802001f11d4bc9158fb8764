@@ -1,0 +1,67 @@
+package prac3;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class RecorridosAG {
+	
+	public static void main(String[] args) {
+		GeneralTree<Integer> root = new GeneralTree<>(1);
+
+        // Creamos algunos nodos hijos y los agregamos al nodo raíz
+        GeneralTree<Integer> child1 = new GeneralTree<>(2);
+        GeneralTree<Integer> child2 = new GeneralTree<>(3);
+        GeneralTree<Integer> child3 = new GeneralTree<>(9);
+
+        root.addChild(child1);
+        root.addChild(child2);
+        root.addChild(child3);
+
+        // Creamos más nodos y los agregamos como hijos de child1
+        GeneralTree<Integer> child11 = new GeneralTree<>(5);
+        GeneralTree<Integer> child12 = new GeneralTree<>(7);
+
+        child1.addChild(child11);
+        child1.addChild(child12);
+        
+        printTree(root, 0);
+        
+        List<Integer> lista = numerosImparesMayoresQuePreOrden(root,3);
+        
+        for (int i = 0; i<lista.size();i++) {
+        	System.out.println(lista.get(i));
+		}
+        System.out.println("----------------");
+        System.out.println(root.altura());
+	}
+	
+	public static void printTree(GeneralTree<?> node, int depth) {
+        for (int i = 0; i < depth; i++) {
+            System.out.print("  "); // Indentación para visualizar la profundidad
+        }
+        System.out.println("- " + node.getData());
+
+        // Recorremos los hijos del nodo y llamamos recursivamente a printTree
+        for (GeneralTree<?> child : node.getChildren()) {
+            printTree(child, depth + 1);
+        }
+    }
+	
+	public static List<Integer> numerosImparesMayoresQuePreOrden (GeneralTree <Integer> a,Integer n){
+		List<Integer> lista = new ArrayList<Integer>();
+		numerosImparesMayoresQuePreOrdenPrivate(a,n,lista);
+		return lista;
+	}
+	
+	private static void numerosImparesMayoresQuePreOrdenPrivate (GeneralTree <Integer> a,Integer n,List<Integer> l){
+		if ((a.getData()%2 != 0) && (a.getData() > n)){
+			l.add(a.getData());
+		}
+		if (a.hasChildren()) {
+			List<GeneralTree<Integer>> hijos = a.getChildren();
+			for (GeneralTree<Integer> hijo : hijos) {
+				numerosImparesMayoresQuePreOrdenPrivate(hijo,n,l);
+			}
+		}
+	}
+}
