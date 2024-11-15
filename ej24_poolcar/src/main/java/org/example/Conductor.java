@@ -3,19 +3,19 @@ package org.example;
 import java.util.List;
 
 public class Conductor extends Usuario{
-    private int capacidad;
     private Vehiculo vehiculo;
-    private List<Viaje> viajes;
 
-    public void cobrarViaje(Viaje viaje) {
+    public Conductor(Vehiculo vehiculo,String nombre,double saldo){
+        this.capacidad = capacidad;
+        this.vehiculo = vehiculo;
+        super(nombre,saldo);
+    }
 
+    public void cobrarViaje(double pago) {
+        this.saldo - vehiculo.bonificacion();
     }
 
     public void cargarSaldo(double saldo) {
-        super.setSaldo(super.getSaldo() + saldo);
-    }
-
-    public int getCapacidad() {
-        return capacidad;
+        super.agregarSaldo(saldo);
     }
 }

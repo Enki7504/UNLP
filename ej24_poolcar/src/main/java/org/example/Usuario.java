@@ -1,15 +1,20 @@
 package org.example;
 
-public abstract class Usuario {
-    private String nombre;
-    private double saldo;
+import java.util.List;
 
-    protected void setSaldo(double saldo) {
+public abstract class Usuario {
+    protected String nombre;
+    protected double saldo;
+    protected List<Viaje> viajes;
+
+    protected Usuario(String nombre,double saldo){
+        this.nombre = nombre;
         this.saldo = saldo;
+        viajes = new ArrayList<Viaje>();
     }
 
-    protected double getSaldo() {
-        return saldo;
+    protected void agregarSaldo(double saldo) {
+        this.saldo += saldo;
     }
 
     public abstract void cobrarViaje(Viaje viaje);
