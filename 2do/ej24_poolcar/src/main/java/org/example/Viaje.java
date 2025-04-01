@@ -27,13 +27,34 @@ public class Viaje {
         return total;
     }
 
-    public void agregarPasajero(Usuario pasajero) {
-        if (hayEspacio()) {
-            pasajeros.add(pasajero);
+    public boolean reservarViaje(Usuario pasajero){
+        if (ChronoUnit.DAYS.between(this.fecha,new LocalDate.now())){
+            return this.agregarPasajero(pasajero);
         }
+        return false;
+    }
+
+    public boolean agregarPasajero(Usuario pasajero) {
+        
+        if (hayEspacio()) {
+            return pasajeros.add(pasajero);
+        }
+        return false;
     }
 
     private boolean hayEspacio(){
-        return vehiculo.getDueno().getCapacidad() > pasajeros.size();
+        return vehiculo.hayEspacio(pasajeros.size());
+    }
+
+    public boolean ultimos30dias(){
+        return (Crono.unit.DAYS.between(this.fecha,new LocalDate.now()) <= 30);
+    }
+
+    public ProcesarViaje(){
+        double cobrar = total / pasajeros.size();
+
+        pasajeros.stream().foreach( c ->
+            c.cobrarViaje(cobrar);
+        )
     }
 }
