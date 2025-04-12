@@ -26,7 +26,10 @@ public class PostApp {
 	public List<Post> ultimosPosts(Usuario user, int cantidad) {
 	        
 	    List<Post> postsOtrosUsuarios = new ArrayList<Post>();
-	    for (Post post : this.posts) {
+		posts.stream().filter(p -> !p.loPublico).sort(x,y -> x.sosMasNuevo(y)).collect(Collectors.toList)
+
+
+		for (Post post : this.posts) {
 	        if (!post.loPublico(user)) { //!post.getUsuario().equals(user)
 	            postsOtrosUsuarios.add(post);
 	        }
